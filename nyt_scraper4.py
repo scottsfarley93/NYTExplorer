@@ -515,9 +515,10 @@ class NYTParser():
             plt.xlabel("Day")
             plt.ylabel("Raw Number of Mentions")
             for column in df:
+                ##plot rate of change plots
                 col = df[column]
                 if column != 'Date':
-                    col = col.pct_change(periods=2)
+                    pct = col.pct_change(periods=2)
                     plt.figure()
                     if normalize:
                         title = column + " Percent Change in Mentions/Article"
@@ -525,13 +526,15 @@ class NYTParser():
                         title = column + " Percent Change in Number of Mentions"
                     if column == 'NumArticles':
                         title = "Number of Articles"
-                    col.plot(kind='bar', title=title)
+                    pct.plot(kind='bar', title=title)
+                    col.plot()
                     plt.xlabel("Day")
                     plt.ylabel("Percent Change")
             ##finish
             plt.show()
 
         ##try to find change points
+        print "________POSSIBLE CHANGE POINTS________"
         changePoints = {}
         for column in df:
             col = df[column] ##pandas series
