@@ -8,7 +8,6 @@ print "Getting set up.  Please Wait."
 try:
     import progressbar
     import nltk
-    import unicodedata
     import urllib2
     import json
     import time
@@ -17,7 +16,6 @@ try:
     import collections
     import operator
     import os
-    import string
     import matplotlib.pyplot as plt
     import pandas
     import ast
@@ -358,6 +356,7 @@ class NYTParser():
 
     def findCollocations(self, text, verbose=True):
         """Find common phrases for a piece of text"""
+        print "Searching..."
         words = self.tokenize(text)
         bigram_measures = nltk.collocations.BigramAssocMeasures
         finder = nltk.collocations.BigramCollocationFinder.from_words(words)
@@ -607,7 +606,7 @@ class NYTParser():
         numUniqueWords = 0
         i = 0
         while i < len(self.days):
-            d = self.days[0]
+            d = self.days[i]
             numArticles += d.numAnalyzed
             numWords += d.numWords
             numUniqueWords += d.numUniqueWords
@@ -804,7 +803,7 @@ def InteractiveRun():
                 aggText = parser.aggregateDateRange()
                 while aggMode:
                     try:
-                        aggOptions = ['1', '2', '3', 'Q', 'q']
+                        aggOptions = ['1', '2', '3', '4', 'Q', 'q']
                         aggChoice = raw_input("\t----Aggregate Data Options----\n"
                                           "\t\t(1)Interactive Mode\n"
                                           "\t\t(2)Query Built-in Lists\n"
@@ -876,7 +875,6 @@ def InteractiveRun():
                                         if " " in term.strip():
                                             print "Term must be only one word."
                                             raise ValueError
-                                        print "Ready to go."
                                         parser.analyzeChange([term])
                                 except:
                                     pass
