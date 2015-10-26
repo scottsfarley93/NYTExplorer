@@ -1,12 +1,15 @@
 <b>Setup</b>
-1.1.	Get developer key – used by organizations to keep track of who is using their API interface and make sure that people don’t use too many of their resources without paying
-1.1.1.	Go to http://developer.nytimes.com/
-1.1.2.	Click ‘Request an API Key’
-1.1.3.	Sign into your NYT account or create one now – its free.
-1.1.4.	 Give your application a name – it can be anything, since you won’t be deploying you application it doesn’t matter.
-1.1.5.	Click ‘Issue a new key for Article Search API’
-1.1.6.	Agree to the terms of service
-1.1.7.	Copy and paste your new API key – you can always find it again online
+<ol>
+<li>	Get developer key – used by organizations to keep track of who is using their API interface and make sure that people don’t use too many of their resources without paying</li>
+	<ol>
+			<li>	Go to http://developer.nytimes.com/</li>
+			<li>	Click ‘Request an API Key’</li>
+			<li>	Sign into your NYT account or create one now – its free.</li>
+			<li>	 Give your application a name – it can be anything, since you won’t be deploying you application it doesn’t matter.</li>
+			<li>	Click ‘Issue a new key for Article Search API’</li>
+			<li> Agree to the terms of service</li>
+			<li>	Copy and paste your new API key – you can always find it again online</li>
+	</ol>
 1.2.	Download materials
 1.2.1.	Go to https://github.com/scottsfarley93/NYTExplorer
 1.2.2.	Click download zip (lower right)
