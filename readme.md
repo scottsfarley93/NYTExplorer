@@ -1,7 +1,7 @@
 <h1>New York Times Explorer</h1>
 <h2> Author Scott Farley</h2>
 <i>UW Madison Cartography</i>
-<i>October 2015<i>
+<i>October 2015</i>
 <h4>Setup</h4>
 <ol>
 <li>	Get developer key – used by organizations to keep track of who is using their API interface and make sure that people don’t use too many of their resources without paying</li>
@@ -105,7 +105,7 @@
 
 
 
-<h5>Built-in lists:</h6>
+##Built-in lists:
 
 ##European Countries (and other regionally important countries): 
 		"RUSSIA", 
