@@ -32,7 +32,7 @@
 <ol>
 </li>	Open nytExplorer.py with any text editor (notepad++)</li>
 </li>	Find the class declaration <code>Configuration</code></li>
-</li>	Find the line that says <code>self.apiKey = “” (line 52)<</code>/li>
+</li>	Find the line that says <code>self.apiKey = “” (line 52)</code></li>
 </li>	Replace <code>self.apiKey = “” with self.apiKey = {{your api key}} </code></li></ol>
 </ol>
 
