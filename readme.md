@@ -1,6 +1,6 @@
 <h1>New York Times Explorer</h1>
-<h2> Author Scott Farley</h2>
-<i>UW Madison Cartography</i>
+<h6> Author Scott Farley</h6>
+<i>UW Madison Cartography</i><br/>
 <i>October 2015</i>
 <h4>Setup</h4>
 <ol>
