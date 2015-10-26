@@ -49,6 +49,7 @@ class Configuration():
         if not os.path.exists(docsFolder + "/NYTExplorer"):
             os.mkdir(docsFolder + "/NYTExplorer")
         self.defaultFolder = docsFolder + "/NYTExplorer"
+        self.apiKey = ""
 
 
 class NYTParser():
@@ -124,7 +125,7 @@ class NYTParser():
         """Querys the database for a specific day yyyymmdd (string) and saves the aggregated text to disk"""
                 ##Query elements
         baseURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json"
-        api_key = "389fb66286e98e35e0a6f7d8d8d9abb0:18:73270480" ##Scott Farley, scottsfarley@gmail.com
+        api_key = self.config.apiKey ##Scott Farley, scottsfarley@gmail.com
         q = self.searchTerm ##term to search Nyt database for, eg "Syria"
         ##url encode the search term if it is multiple words long
         if " " in q:
@@ -726,6 +727,11 @@ def InteractiveRun():
     ##2. Load From Disk
     ##Q. Quit
     mainMenu = True
+    conf = Configuration()
+    if conf.apiKey == "":
+        ##Abort if user does not have their own api key
+        print "You must enter your api key before continuing."
+        exit()
     while mainMenu:
         try:
             mainMenuChoices = ['1', '2', 'Q', 'q']
