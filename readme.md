@@ -1,4 +1,4 @@
-1.	Setup
+<b>Setup</b>
 1.1.	Get developer key – used by organizations to keep track of who is using their API interface and make sure that people don’t use too many of their resources without paying
 1.1.1.	Go to http://developer.nytimes.com/
 1.1.2.	Click ‘Request an API Key’
