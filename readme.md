@@ -25,22 +25,22 @@
 <ol>
 <li>	Open a new terminal window </li>
 <li>	cd to the folder you just unzipped </li>
-<li>	Run this command: >> sudo python setup.py </li>
+<li>	Run this command:<code> >> sudo python setup.py </code> </li>
 <li>	If you see “You’re all set!” all necessary packages were successfully installed.  Otherwise, you will have to try to install these packages manually. </li>
 </ol>
 <li>	Set your API key </li>
 <ol>
 </li>	Open nytExplorer.py with any text editor (notepad++)</li>
-</li>	Find the class declaration Configuration</li>
-</li>	Find the line that says self.apiKey = “” (line 52)</li>
-</li>	Replace self.apiKey = “” with self.apiKey = {{your api key}}</li></ol>
+</li>	Find the class declaration <code>Configuration</code></li>
+</li>	Find the line that says <code>self.apiKey = “” (line 52)<</code>/li>
+</li>	Replace <code>self.apiKey = “” with self.apiKey = {{your api key}} </code></li></ol>
 </ol>
 
 <b>At this point, the script should be correctly configured to run on your computer.</b>
 
 <h4>Run</h4>
 <ol>
-</li>	Run the main script by this command: >>python nytExplorer.py</li>
+</li>	Run the main script by this command: <code>>>python nytExplorer.py</code></li>
 <i>	If everything has been setup properly, the main menu should appear in your console. </i>
 <li>	New Run – Start a new run from scratch  (Option 1) </li>
 <ol>
@@ -53,7 +53,7 @@
 </ol>
 <li>	Load a file
 	<ol>
-<li>	Previous runs are saved by default to /users/[Your Username]/documents/nytExplorer/explorer_[startString]_[endString].dat</li>
+<li>	Previous runs are saved by default to <code>/users/[Your Username]/documents/nytExplorer/explorer_[startString]_[endString].dat</code></li>
 <li>	If you have one of these files, select option 2 of the main menu.  When prompted, enter you .dat file path.</li>
 <li>	If it is correctly formatted, it should be successfully imported into the program.</li>
 </ol>
@@ -68,7 +68,7 @@
 </ol>
 <ol>
 <li>	Query builtin lists – Several lists have been precompiled for analysis.</li>
-<li>	Built-in lists can be modified by opening the nytExplorer script with a text editor, going to the NYT Parser Class Declaration, Finding the __init__ function (at the top of the declaration), and then adding words to the lists as desired.</li>
+<li>	Built-in lists can be modified by opening the nytExplorer script with a text editor, going to the <code>NYT Parser</code> Class Declaration, Finding the <code>__init__</code> function (at the top of the declaration), and then adding words to the lists as desired.</li>
 <li>	Results will not be written to disk, only written to the console.</li>
 </ol>
 <li> Print aggregate statistics – print the number of articles analyzed, number of days in the analysis, the number of total words in the analysis and the number of unique words.</li>
@@ -77,7 +77,7 @@
 <li>	Term Change / Time series analysis</li>
 <ol>
 <li>	Change points – Possible points of interest based in the data.  Change points will be automatically calculated for each field you search for (i.e., “Russia” may have 2 change points, “Syria”4 change points, etc). </li>
-<li>	Single Term – Interactive mode like in aggregate analysis mode.  Search for a single term.  The results will include graphs of occurrence over your time period, possible change points, and a csv of the results. The csv is automatically saved to disk at: /Users/[Your Username]/Documents/NYTExplorer/term_change_analysis_[startString]_[endString].csv</li>
+<li>	Single Term – Interactive mode like in aggregate analysis mode.  Search for a single term.  The results will include graphs of occurrence over your time period, possible change points, and a csv of the results. The csv is automatically saved to disk at: <code>/Users/[Your Username]/Documents/NYTExplorer/term_change_analysis_[startString]_[endString].csv</code></li>
 <li>	Graphics and Change points are in development, but work marginally well for now.</li>
 <li>	List of Terms – Interactive mode to add terms to a list, and then see how those changes happen in relation to one another (i.e., put “Syria”, “Russia”, and “Hungary” all on a single graph and look at their relative rates of change.  </li>
 <li>	Terms of built-in Europe Query – Query the European countries list (see above) and write the results to a csv.  Graphics are surpressed. Change points are analyzed.</li>
